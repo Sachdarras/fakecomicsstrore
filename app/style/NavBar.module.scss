@@ -1,0 +1,57 @@
+/* NavBar.module.scss */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f39c12; /* Orange BD */
+  padding: 0.5rem 1rem;
+  border-bottom: 3px solid #000; /* Trait noir BD */
+
+  /* Effet BD en ombrage */
+  box-shadow: 4px 4px 0 #000;
+}
+
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000; /* texte noir */
+  text-decoration: none;
+
+  &:hover {
+    color: #fff; 
+    text-shadow: 2px 2px #000;
+  }
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.navLinks li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 0.25rem 0.5rem;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #fff;
+    color: #e74c3c; /* rouge comics */
+    border: 2px solid #000;
+  }
+}
+
+.cartCount {
+  font-size: 0.9rem;
+  color: #000;
+}

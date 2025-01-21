@@ -1,0 +1,59 @@
+/* app/comics/comics.module.scss */
+
+/* Conteneur principal de la page listing */
+.main {
+  padding: 1rem;
+  background-color: #fcf8e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Titre principal */
+.heading {
+  font-size: 2rem;
+  color: #c0392b; /* Un rouge un peu vif */
+  text-shadow: 2px 2px #f1c40f; /* effet BD jaune */
+  margin-bottom: 1rem;
+}
+
+/* Liste d'items */
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* espace entre les items */
+}
+
+/* Chaque item */
+.item {
+  background-color: #fff; 
+  border: 2px solid #000; /* contour noir type BD */
+  border-radius: 8px;
+  width: 200px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #ffeaa7; /* un jaune plus clair au survol */
+  }
+}
+
+/* Titre d'un comic */
+.title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #920202; /* Un bleu */
+  text-transform: uppercase;
+}
+
+/* Image de couverture */
+.cover {
+  max-width: 100%;
+  border: 2px solid #000; /* cadre noir BD */
+  margin-top: 0.5rem;
+}

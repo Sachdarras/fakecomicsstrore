@@ -1,0 +1,28 @@
+/* AddToCartButton.module.scss */
+
+.cartBtn {
+  background-color: #ffcc00;   /* Jaune vif style comic */
+  color: #000;                 /* Texte noir */
+  border: 2px solid #000;      /* Trait noir épais */
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+
+  /* effet BD : un léger ombrage pour donner un côté "dessiné" */
+  box-shadow: 3px 3px 0 #000;
+
+  &:hover {
+    background-color: #ffe680;  /* Un jaune un peu plus clair */
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000; /* accentue l'ombre au survol */
+  }
+
+  &:active {
+    transform: translate(0, 0);
+    box-shadow: 2px 2px 0 #000;
+  }
+}
